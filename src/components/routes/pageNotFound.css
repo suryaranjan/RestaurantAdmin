@@ -1,0 +1,64 @@
+.pageNotFound{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.pageNotFoundIcons{
+    display: flex;
+    background-color: #DFEDEF;
+    flex-direction: column;
+}
+
+.pageNotFound .pageNotFoundIcons svg:first-of-type{
+    height: 350px;
+    align-self: center;
+}
+.pageNotFound .pageNotFoundIcons svg:last-of-type{
+    align-self: center;
+    position: relative;
+    bottom: -50px;
+}
+.pageNotFound p{
+
+    margin: 0px;
+    margin-top: 5%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.pageNotFound .paymentModalHeader{
+    width: 80% !important;
+    align-self: center;
+    margin-top: 20px !important;
+    height: 1px;
+}
+
+.pageNotFound label{
+    margin-top: 11px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.pageNotFound .contacts{
+    width: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+.pageNotFound .contacts .verticalLine{
+    border: 1px solid;
+    margin: 0px 10px;
+    border-color: #E4E4E4;
+}
+.pageNotFound .contacts span{
+    font-size: 13px;
+    font-weight: bold;
+    color: #505050;
+}
+
+.pageNotFound .contacts span:last-of-type{
+    color: #0038FF;
+    text-decoration: underline;
+    text-decoration-color: #0038ff;
+}   

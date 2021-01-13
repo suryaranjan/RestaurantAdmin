@@ -1,0 +1,12 @@
+@media (min-width: 600px){
+    .MuiSnackbar-anchorOriginTopCenter {
+      top: 60px;
+      z-index: 999999999999 !important;
+    }
+  }
+  .confirmationDialog{
+    z-index: 99999999991 !important;
+  }
+  #alert-dialog-slide-description-confirmation{
+    word-break: break-word;
+  }

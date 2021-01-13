@@ -1,0 +1,126 @@
+.verticalLine{
+    width: 1px;
+    vertical-align: middle;
+    height: 14px;
+    margin: 0px 7px;
+    margin-top: 5px;
+    border-left: 2px solid #305c66;
+}
+.restaurantDetails {
+    width: 90% !important;
+    margin: auto !important;
+}
+.restaurantDetails p{
+    margin: 0px;
+    width: fit-content;
+}
+.headerButton,.headerRating{
+    display: flex;
+}
+.headerRating{
+    margin-bottom: 30px;
+}
+.headerButton svg.MuiSvgIcon-root{
+    font-size: 30px;
+    align-self: center;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #413d3d;
+}
+.headerButton p{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    align-self: center;
+    color: #413d3d;
+}
+.restaurantDetailsContainer{
+    border-radius: 5px;
+    margin-bottom: 4% !important;
+    box-shadow: 1px 0px 7px rgb(30 126 182 / 50%);
+}
+.headerName p{
+    font-size: 26px;
+    font-weight: 500;
+    color: #1B5865;
+    margin-bottom: 15px;
+}
+.headerRating button{
+    border: 1px solid #0a8fac;
+    padding: 4px 15px;
+    font-size: 21px;
+    font-weight: 500;
+    margin-left: auto;
+    color: white;
+    background:#0f829b;
+}
+.headerRating button span svg.MuiSvgIcon-root{
+    font-size: 30px;
+}
+.cuisines,.location,.contact{
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    color: #696969;
+}
+.cuisines svg.MuiSvgIcon-root,.location svg.MuiSvgIcon-root{
+    margin-right: 10px;
+    color: #18798f;
+    margin-bottom: 10px;
+}
+.MuiDivider-root.headerDivider{
+    border-top: 1px solid #288497;
+    height: 0px;
+    margin: 10px 0px;
+    width: calc(100% + 25px);
+    margin-left: -12px;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+.subHeader p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #11687a;
+    margin-bottom: 10px;
+}
+.about p{
+    font-size: 16px;
+    color: #2c2a2a;
+}
+.details.MuiGrid-item{
+    display: flex;
+    margin: 15px 0px;
+}
+.details svg.MuiSvgIcon-root{
+    align-self: center;
+    padding: 5px;
+    background: #0691a7;
+    color: white;
+    border-radius: 3px;
+    margin-right: 30px;
+}
+.details > div p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #074157;
+}
+.details > div span{
+    font-size: 16px;
+    color: #696969;
+}
+.menuHeader.saveButton{
+    display:flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.menuHeader > p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #0e7272;
+}
+.extraLast.headerDivider{
+    border-top: 2px solid #288497;
+}
+.headerButton.saveButton button{
+    margin-left: auto;
+}

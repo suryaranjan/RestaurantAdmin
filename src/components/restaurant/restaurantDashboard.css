@@ -1,0 +1,420 @@
+.MuiGrid-spacing-xs-3 > .orderDashboard.MuiGrid-item{
+    display: flex;
+    padding-bottom: 0px;
+}
+.orderDashboard > h2{
+    margin: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    height: 25px;
+}
+
+.orderListDropdown .MuiInput-underline:hover:not(.Mui-disabled):before{
+    border-bottom: none
+}
+
+.orderListDropdown .MuiInput-underline:before, .orderListDropdown .MuiInput-underline:after
+{
+    transition: none;
+    border-bottom: none;
+}
+.MuiGrid-spacing-xs-3 > .orderListDropdown.MuiGrid-item ,.orderDropdown.MuiGrid-item {
+    padding-bottom: 0px;
+}
+.MuiGrid-spacing-xs-3 > .customerDropdown.MuiGrid-item {
+    padding-bottom: 0px;
+}
+.orderListDropdown{
+    display: flex;
+    margin-left: 16px;
+}
+.orderListDropdown .MuiInputBase-root.MuiInput-root.MuiInput-underline{
+    margin-top: 4px;
+    margin-left: 5px;
+    z-index: 1;
+}
+.orderListDropdown .MuiInput-underline.Mui-focused:after {
+    transform: none !important;
+}
+
+.orderListDropdown .MuiSelect-root.MuiSelect-select.MuiInputBase-input.MuiInput-input{
+    font-size: 15px;
+    font-weight: 600;
+    color: #505050;
+}
+.orderListDropdown .MuiSelect-icon.MuiSvgIcon-root{
+    top: calc(50% - 11px);
+    font-size: 22px;
+    margin-top: 1px;
+}
+.orderListDropdown h3{
+    color: #4444447a;
+}
+
+/* Order Dropdown */
+.orderAdvanceFilters.orderAdvanceSection > div.MuiFormControl-root{
+    width: 16%;
+}
+.orderDropdown .MuiInput-underline.Mui-focused:after{
+    transform: none !important;
+}
+.orderDropdown .MuiInput-underline:before, .orderDropdown .MuiInput-underline:after{
+    transition: none;
+    border-bottom: none;
+}
+.orderDropdown .MuiInput-underline:hover:not(.Mui-disabled):before{
+    border-bottom: none
+}
+.orderDropdown .MuiInputBase-root.MuiInput-root.MuiInput-underline{
+    background-color: #ffff;
+    border: 1px solid #98012e;
+    color: #98012e;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 1px 10px;
+    border-radius: 5px;
+    margin-top: 19px;
+    box-shadow: 0px 0px 1px 0px #98012e;
+    float: right;
+    
+}
+.orderDropdown .MuiSvgIcon-root.MuiSelect-icon{
+    color: #98123E;
+    top: calc(50% - 14px);
+}
+
+/* Order Filter */
+.orderFilters .MuiInput-underline.Mui-focused:after{
+    transform: none !important;
+}
+.order-id, .orderFiltersAutoComplete, .first-name, .last-name, .last-changed-by, .credit-card{
+    width: 12.5%;
+}
+.tracking{
+    width: 18%;
+}
+.orderAdvanceFilters{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.orderAdvanceFilters svg.MuiSvgIcon-root{
+    font-size: 25px;
+    align-self: center;
+    color: #1B5865;
+    cursor: pointer;
+}   
+.orderFilterSearch {
+    display: flex;
+    width: 100%;
+    border: 1px solid #1B5865;
+    border-radius: 5px;
+    height: 35px;
+}
+.orderFilterSearch:focus-within {
+    outline: inherit;
+    border: 2px solid #36B0C9;
+}
+.orderFilterSearch .searchIcon{
+    color: #B3B3B3;
+}
+.orderFilterSearch .searchBar{
+    width: 92%;
+}
+.orderFilterSearch hr.MuiDivider-vertical{
+    border-right: 1px solid #1B5865;
+}
+.orderFilterSearch .filterOption{
+    background-color: #E1F3F7;
+    width: 5%;
+    border-radius: 0px 5px 5px 0px;
+}
+.orderFilterSearch .filterOption{
+    color: #1B5865;
+}
+.orderFilterSearch .filterOption.MuiIconButton-root:hover{
+    background-color: #E1F3F7;
+}
+.orderFilters .MuiInput-underline:before, .orderFilters .MuiInput-underline:after{
+    transition: none;
+    border-bottom: none;
+}
+.orderFilters .MuiInput-underline:hover:not(.Mui-disabled):before{
+    border-bottom: none
+}
+.orderFilters .MuiInputBase-root.MuiInput-root.MuiInput-underline{
+    background-color: #ffff;
+    border: 1px solid #1B5865;
+    color: #1B5865;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 1px;
+    margin-top: -1px;
+}
+.orderFilters{
+    padding: 4px 12px !important;
+    z-index: 1;
+}
+.orderFilters .MuiSvgIcon-root.MuiSelect-icon{
+    color: #1B5865;
+    top: calc(50% - 14px);
+}
+.orderFilters .MuiFormLabel-root{
+    color: #1B5865;
+}
+.orderFilters .MuiOutlinedInput-notchedOutline{
+    border-color: #288497;
+    height: 42px;
+}
+.orderFilters .MuiOutlinedInput-notchedOutline:hover{
+    border-color: #288497;
+}
+.orderFilters{
+    display: flex;
+    justify-content: space-between;
+}
+.orderFilters .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color: #288497;
+}
+.orderFilters .Mui-focused.MuiFormLabel-root{
+    color: #288497;
+}
+.orderFilters .MuiOutlinedInput-input{
+    padding: 11.5px 9px;
+}
+.orderFilters .MuiInputBase-input{
+    font-size: 15px;
+    padding-left: 13px;
+}
+.orderFiltersAutoComplete .MuiAutocomplete-hasPopupIcon .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"], .MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"]{
+    padding-right: 0px !important;
+}
+.orderFilters .MuiAutocomplete-root{
+    width: 13%;
+}
+.orderFiltersAutoComplete .MuiFormControl-marginNormal{
+    margin: 0px;
+}
+.orderFiltersAutoComplete .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"]{
+    padding: 0px;
+}
+.orderFiltersAutoComplete .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] .MuiAutocomplete-input:first-child{
+    padding-left: 14px;
+}
+
+/* Order Table */
+.MuiTableCell-stickyHeader{
+    background-color: #E1F3F7 !important;
+}
+.orderHistoryTable  tr th.action{
+    width: 7%;
+}
+.orderHistoryTable .fulfillmentAction{
+    padding: 0px;
+}
+
+.orderHistoryTable  tr.MuiTableRow-head{
+    background-color: #E1F3F7;
+}
+.orderHistoryTable th.MuiTableCell-head{
+    color: #1B5865;
+    font-weight: 600;
+    font-size: 11px;
+    padding: 16px;
+}
+.orderHistoryTable.orderTable th.MuiTableCell-head{
+    padding: 10px 16px;
+
+}
+.orderHistoryTable .MuiTableCell-body{
+    color: #484848;
+}
+.orderHistoryTable .MuiTableCell-root{
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid lightgrey;
+    line-height: 1;
+    padding: 10px 16px;
+}
+.orderHistoryTableContainer > div:first-child{
+    border: 1px solid #1B5865;
+    border-radius: 6px;
+    box-shadow: 0px 0px 0px 1px #1b58653b;
+}
+.orderHistoryTableContainer .MuiPaper-root.MuiTableContainer-root.MuiPaper-elevation1.MuiPaper-rounded{
+    height: 65vh;
+}
+.orderHistoryTableContainer .MuiPaper-root.MuiTableContainer-root.MuiPaper-elevation1.MuiPaper-rounded::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+}
+
+.orderHistoryTableContainer .MuiPaper-root.MuiTableContainer-root.MuiPaper-elevation1.MuiPaper-rounded::-webkit-scrollbar
+{
+	width: 3px;
+    background-color: #F5F5F5;
+    height: 3px;
+}
+
+.orderHistoryTableContainer .MuiPaper-root.MuiTableContainer-root.MuiPaper-elevation1.MuiPaper-rounded::-webkit-scrollbar-thumb
+{
+	background-color: #97CBD5;
+}
+
+.orderHistoryTable .fulfillmentTableAction svg.MuiSvgIcon-root{
+    font-size: 18px;
+    color: #97CBD5;
+    display: block;
+    margin: auto;
+}
+.orderHistoryTable .fulfillmentTableAction span{
+    font-size: 11px;
+    color: #97CBD5;
+}
+
+/* Order Complete Modal */
+.orderCompleteModal.customerModalForm.customerInfoContainer{
+    height: 80vh;
+    width: 75% !important;
+    top: 5%;
+}
+.orderCompleteModal.customerModalForm.customerInfoContainer .orderPlacedContainer {
+    display: flex;
+}
+.orderCompleteModal.customerModalForm.customerInfoContainer .orderPlacedContainer  div{
+    margin: auto;
+}
+.orderCompleteModal.customerModalForm.customerInfoContainer .orderPlacedContainer  div svg{
+    font-size: 50px;
+    color: #ffffff;
+    background: #2E96AB;
+    border-radius: 50%;
+    padding: 25px;
+}
+.orderCompleteModal.customerModalForm.customerInfoContainer .orderPlacedContainer  div p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #0D2C32;
+}
+.MuiTableRow-root {
+    cursor: pointer;
+}
+
+
+.orderDropdown.customerDropdown button{
+    float: right;
+    margin-top: 12px;
+    border: 1px solid #04475b;
+    color: #06303c;
+}
+td.MuiTablePagination-root{
+    display: flex;
+}
+td.MuiTablePagination-root .MuiTablePagination-toolbar{
+    margin-left: auto;
+}
+.MuiCheckbox-colorSecondary.Mui-checked:hover {
+    background-color: unset;
+}
+.MuiIconButton-root:hover {
+    background-color: unset;
+}
+.MuiIconButton-colorSecondary:hover {
+    background-color: unset;
+}
+.orderHistoryTableContainer.productTableContainer .MuiPaper-root.MuiTableContainer-root.MuiPaper-elevation1.MuiPaper-rounded{
+    height: 57vh;
+}
+.productFilters .ProductName{
+    width: 20%;
+}
+.productFilters .ProductStrength, .MinPrice, .MaxPrice, .CostPerUnit{
+    width: 10%;
+}
+.productListColumnList{
+    padding: 0px 12px !important;
+}
+.productListColumnList p{
+    margin: 0px;
+    float: right;
+    text-decoration: underline;
+    text-decoration-color: #1B5865;
+    color: #1B5865;
+    font-size: 15px;
+    cursor: pointer;
+}
+.productColumnListContainer{
+    position: relative;
+    width: 88%;
+    top: 29.5%;
+    right: 1.1%;
+    border: 1px solid #1B5865;
+    border-radius: 5px;
+    background-color: #ffff;
+    padding: 12px 13px 12px 12px;
+    z-index: 500;
+}
+#simple-popover .MuiPaper-root.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded{
+    padding: 0px 0px 0px 2px;
+}
+.productColumnItem{
+    display: flex;
+}
+.productColumnItem p{
+    color: #1B5865;
+    font-size: 16px;
+}
+.productColumnItem .MuiCheckbox-colorSecondary.Mui-checked span svg.MuiSvgIcon-root{
+    color: #56bed4;
+}
+.productColumnItem span svg.MuiSvgIcon-root{
+    color: #1B5865;
+}
+.productColumnListHeader{
+    display: flex;
+}
+.productColumnListHeader .MuiGrid-item.MuiGrid-root.listOfColumnHeader{
+    color: #23798c;
+    font-size: 16px;
+    margin-left: 2px;
+}
+.productColumnListHeader .MuiGrid-item.MuiGrid-root svg.MuiSvgIcon-root{
+    font-size:  18px;
+    color: #1B5865;
+}  
+.productColumnItem span.MuiButtonBase-root.MuiIconButton-root.MuiCheckbox-root{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.productColumnListCheckbox{
+    height: 56vh;
+    overflow-y: scroll;
+}
+.productColumnListCheckbox::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+}
+
+.productColumnListCheckbox::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #F5F5F5;
+}
+
+.productColumnListCheckbox::-webkit-scrollbar-thumb
+{
+	background-color: #97CBD5;
+}
+.MuiTableRow-root {
+    cursor: pointer;
+}
+.inActive {
+    background-color: #e7dada;
+}
+.actions svg.MuiSvgIcon-root{
+    color: #12689a;
+}

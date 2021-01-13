@@ -1,0 +1,35 @@
+.footer.MuiPaper-root{
+    display: flex;
+    color: #1B5865;
+    
+    position: fixed;
+    bottom: 0;
+    font-weight: 500;
+    width: calc(100% - 73px);
+}
+.footer.MuiPaper-root.short{
+    width: calc(100% - 73px);
+    margin-left: 71px;
+}
+.footer.MuiPaper-root.normal{
+    width: 100%;
+}
+.footer p:first-child{
+    margin: 12px 12px 12px 10px;
+}
+.footer p:last-child {
+    margin: 10px 0px 10px 10px;
+}
+.footer .verticalLine{
+    width: 1px;
+    vertical-align: middle;
+    height: 14px;
+    margin-top: 16px;
+    border-left: 2px solid #1B5865;
+}
+.footer.MuiPaper-elevation3{
+    box-shadow: 0px 0px 2px 0px #E1F3F7, 0px 0px 0px 1px #36b0c966, 0px 1px 0px 0px #E1F3F7;
+}
+.footer{
+    margin-top: 18px;
+}

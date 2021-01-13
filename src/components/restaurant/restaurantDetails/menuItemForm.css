@@ -1,0 +1,81 @@
+.itemFormContainer{
+    position: absolute;
+    width: 100%;
+    top: 51px;
+    box-shadow: 1px 0px 7px rgba(0,0,0,0.5);
+    transform: translate3d(-0px, -96%, 17px);
+    transition: transform 0.6s ease-out;
+    background: white;
+    border-radius: 5px;
+}
+.itemForm.customerAddressFormBox.customerModalFormBox{
+    width: 49%;
+}
+.menuTypeSection {
+    margin-top: 15px !important;
+}
+    
+.menuTypeSection > p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #074e51;
+}
+.menuItemsContainer{
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+.item{
+    width: 10%;
+    transition: transform .2s;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 5px 10px !important;
+    box-shadow: 1px 3px 7px rgb(11 89 134 / 50%);
+}
+.item:hover{
+    /* transform: scale(1.2); */
+}
+.item svg.MuiSvgIcon-root{
+    font-size: 16px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px rgb(11 89 134 / 50%);
+}
+.item p{
+    margin: auto;
+}
+.item p:first-of-type{
+    font-size: 18px;
+    font-weight: 500;
+    color: #696969;
+}
+.item p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.item p.actionItems{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #0d949b;
+    box-shadow: unset;
+}
+.item p.actionItems svg.MuiSvgIcon-root{
+    box-shadow: unset;
+    cursor: pointer;
+}
+svg.MuiSvgIcon-root.Veg{
+    color: green;
+}
+svg.MuiSvgIcon-root.Non-Veg{
+    color: #d51414;
+}
+.menuViewAccordion{
+    margin-top: 15px !important;
+}
+.menuTypeSection .MuiAccordionSummary-content p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #086f9c;
+}
