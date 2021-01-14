@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Container from '@material-ui/core/Container';
 import { ROUTES } from '../../constants/routesConstant';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Router } from "react-router-dom";
 import Footer from '../footer/Footer';
 import Navbar from '../navbar/Navbar';
 import history from '../../helpers/history';
@@ -17,11 +17,13 @@ const Dashboard = (props) => {
             <Navbar />
             <div className="dashboardBox">
                 <Container maxWidth="xl" className="dashboardContainer" >
-                    <Switch>
-                        <Route exact path={ROUTES.RESTAURANT_DASHBOARD} component={RestaurantDashboard} />
-                        <Route path={`${ROUTES.RESTAURANT_DETAILS}/:restaurantId`} component={RestaurantDetailsContainer} />
-                        {/* <Route component={PageNotFound} /> */}
-                    </Switch>
+                    <Router history={history}>
+                        <Switch>
+                            <Route exact path={ROUTES.RESTAURANT_DASHBOARD} component={RestaurantDashboard} />
+                            <Route path={`${ROUTES.RESTAURANT_DETAILS}/:restaurantId`} component={RestaurantDetailsContainer} />
+                            <Route component={PageNotFound} />
+                        </Switch>
+                    </Router>
                 </Container>
             </div>
             <Footer />

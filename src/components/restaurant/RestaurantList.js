@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { ROUTES } from '../../constants/routesConstant';
-import { Link } from 'react-router-dom';
-import history from '../../helpers/history'
+import { useHistory, Link } from 'react-router-dom';
+// import history from '../../helpers/history';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -15,6 +15,7 @@ import Paper from '@material-ui/core/Paper';
 import { displayCuisine } from '../../helpers/sharedMethod';
 
 const RestaurantList = (props) => {
+    let history = useHistory();
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
     const [restaurantListData, setRestaurantListData] = React.useState(props.restaurantList);
@@ -99,12 +100,14 @@ const RestaurantList = (props) => {
                                 <TableCell align="center">
                                     {row.email}
                                 </TableCell>
-                                <TableCell align="center" className='actions' onClick={(e) => {
-                                    e.stopPropagation();
-                                    history.push(`${ROUTES.RESTAURANT_DETAILS}/${row.id}`)
-                                }}>
-                                    <VisibilityIcon />
+                                <TableCell align="center" className='actions' ><Link to={`${ROUTES.RESTAURANT_DETAILS}/${row.id}`}>
+                                    <VisibilityIcon onClick={(e) => {
+                                        e.stopPropagation();
+                                        // history.push(`${ROUTES.RESTAURANT_DETAILS}/${row.id}`)
+                                    }} />
+                                </Link>
                                 </TableCell>
+
                             </TableRow>
                         ))}
                         {emptyRows > 0 && (

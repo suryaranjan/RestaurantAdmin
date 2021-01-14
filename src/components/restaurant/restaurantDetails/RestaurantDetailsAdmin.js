@@ -5,19 +5,18 @@ import Divider from '@material-ui/core/Divider';
 import RestaurantDetailsView from './RestaurantDetailsView';
 import history from '../../../helpers/history';
 import RestaurantPreview from '../restaurantPreview/RestaurantPreview';
-import { Redirect } from 'react-router'
+import { useHistory, Link } from 'react-router-dom';
+import { ROUTES } from '../../../constants/routesConstant';
 import SnackbarAlert from '../../sharedComponent/Snackbar';
 import './restaurantDetails.css';
 import MenuItemFormContainer from '../../../containers/menuItemFormContainer';
 import { MessageType } from '../../../constants/notificationMessages';
 import MenuItemListView from './MenuItemListView';
-import { ROUTES } from '../../../constants/routesConstant';
 
 const RestaurantDetailsAdmin = (props) => {
     const [showMenuItemForm, setShowMenuItemForm] = useState(false);
     const [selectedMenuItem, setSelectedMenuItem] = useState({});
     const [showPreview, setShowPreview] = useState(false);
-    const [redirect, setRedirect] = useState(false);
     const [snackbar, setSnackbar] = React.useState({
         open: false,
         type: '',
@@ -86,8 +85,7 @@ const RestaurantDetailsAdmin = (props) => {
     }
     const redirecting = (e) => {
         e.stopPropagation();
-        history.push('/');
-        setRedirect(true);
+        // history.push('/');
     }
 
     const handleCloseRestaurantPreview = () => {
@@ -112,8 +110,12 @@ const RestaurantDetailsAdmin = (props) => {
                 /> :
 
                 <Grid container spacing={3} className="restaurantDetails">
-                    <Grid item xs={6} className="headerButton" onClick={(e) => redirecting(e)}>
-                        <KeyboardBackspaceIcon /><p>Back To List</p>
+                    <Grid item xs={6} >
+                        <Link to={ROUTES.RESTAURANT_DASHBOARD}  >
+                            <div className="headerButton" onClick={(e) => redirecting(e)}>
+                                <KeyboardBackspaceIcon /><p>Back To List</p>
+                            </div>
+                        </Link>
                     </Grid>
                     <Grid item xs={6} className="headerButton saveButton" >
                         <Button variant="contained" onClick={handleCloseRestaurantPreview}>Preview Restaurant</Button>
